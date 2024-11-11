@@ -19,4 +19,8 @@ print(f"{x} - {y} = {erotus(x, y)}") #näitä muuteltiin
 logger("lopetetaan")
 print("goodbye!") #lisäys
 
+<<<<<<< HEAD
 #täällähän tapahtuu vaikka ja mitä
+=======
+#YRITÄN TEHDÄ TEHTÄVÄÄ 9
+>>>>>>> 56dbd54 (lisää 9 tehtävää)
