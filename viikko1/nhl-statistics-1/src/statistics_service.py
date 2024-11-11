@@ -3,10 +3,9 @@ from player_reader import PlayerReader
 
 
 class StatisticsService:
-    def __init__(self):
-        reader = PlayerReader()
+    def __init__(self, player_reader: PlayerReader):
 
-        self._players = reader.get_players()
+        self._players =player_reader.get_players()
 
     def search(self, name):
         for player in self._players:
@@ -35,9 +34,8 @@ class StatisticsService:
         )
 
         result = []
-        i = 0
-        while i <= how_many:
+        
+        for i in range(min(how_many, len(sorted_players))):  # Varmistetaan, että indeksi ei ylity
             result.append(sorted_players[i])
-            i += 1
 
         return result
